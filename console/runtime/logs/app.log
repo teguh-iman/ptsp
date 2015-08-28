@@ -1,0 +1,81 @@
+2015-08-26 14:13:52 [-][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class \kartik\dynagrid\Module does not exist' in C:\xampp\htdocs\ptspdki\vendor\yiisoft\yii2\di\Container.php:415
+Stack trace:
+#0 C:\xampp\htdocs\ptspdki\vendor\yiisoft\yii2\di\Container.php(415): ReflectionClass->__construct('\kartik\dynagri...')
+#1 C:\xampp\htdocs\ptspdki\vendor\yiisoft\yii2\di\Container.php(358): yii\di\Container->getDependencies('\kartik\dynagri...')
+#2 C:\xampp\htdocs\ptspdki\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('\kartik\dynagri...', Array, Array)
+#3 C:\xampp\htdocs\ptspdki\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('\kartik\dynagri...', Array, Array)
+#4 C:\xampp\htdocs\ptspdki\vendor\yiisoft\yii2\base\Module.php(354): yii\BaseYii::createObject(Array, Array)
+#5 C:\xampp\htdocs\ptspdki\vendor\yiisoft\yii2\console\controllers\HelpController.php(140): yii\base\Module->getModule('dynagrid')
+#6 C:\xampp\htdocs\ptspdki\vendor\yiisoft\yii2\console\controllers\HelpController.php(77): yii\console\controllers\HelpController->getModuleCommands(Object(yii\console\Application))
+#7 C:\xampp\htdocs\ptspdki\vendor\yiisoft\yii2\console\controllers\HelpController.php(89): yii\console\controllers\HelpController->getCommands()
+#8 C:\xampp\htdocs\ptspdki\vendor\yiisoft\yii2\console\controllers\HelpController.php(184): yii\console\controllers\HelpController->getCommandDescriptions()
+#9 C:\xampp\htdocs\ptspdki\vendor\yiisoft\yii2\console\controllers\HelpController.php(67): yii\console\controllers\HelpController->getDefaultHelp()
+#10 [internal function]: yii\console\controllers\HelpController->actionIndex(NULL)
+#11 C:\xampp\htdocs\ptspdki\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\ptspdki\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\ptspdki\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('', Array)
+#14 C:\xampp\htdocs\ptspdki\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('', Array)
+#15 C:\xampp\htdocs\ptspdki\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('', Array)
+#16 C:\xampp\htdocs\ptspdki\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('', Array)
+#17 C:\xampp\htdocs\ptspdki\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#18 C:\xampp\htdocs\ptspdki\yii(31): yii\base\Application->run()
+#19 {main}
+2015-08-26 14:13:52 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'AMDAPPSDKROOT' => 'C:\\Program Files (x86)\\AMD APP\\'
+    'APPDATA' => 'C:\\Users\\Aman Rohiman\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'AMANROHIMAN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Aman Rohiman'
+    'LOCALAPPDATA' => 'C:\\Users\\Aman Rohiman\\AppData\\Local'
+    'LOGONSERVER' => '\\\\AMANROHIMAN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OnlineServices' => 'Online Services'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Program Files (x86)\\HP SimplePass\\x64;C:\\Program Files (x86)\\HP SimplePass\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Users\\Aman Rohiman\\AppData\\Local\\Smartbar\\Application\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\xampp\\php;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Utilities\\;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files (x86)\\Git\\bin;C:\\Program Files\\PostgreSQL\\9.3\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;;C:\\server\\bin\\php;C:\\server\\bin\\php\\ext;C:\\server\\bin\\mariadb\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PCBRAND' => 'Pavilion'
+    'PHP_COMMAND' => 'php.exe'
+    'Platform' => 'MCD'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\AMANRO~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\AMANRO~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'AmanRohiman-PC'
+    'USERNAME' => 'Aman Rohiman'
+    'USERPROFILE' => 'C:\\Users\\Aman Rohiman'
+    'VS100COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\ptspdki\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\ptspdki\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\ptspdki\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\ptspdki\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\ptspdki\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1440573232.6407
+    'REQUEST_TIME' => 1440573232
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\ptspdki\\yii'
+    ]
+    'argc' => 1
+]

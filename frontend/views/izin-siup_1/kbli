@@ -1,0 +1,47 @@
+<?php
+
+use yii\helpers\Html;
+use kartik\widgets\ActiveForm;
+use kartik\builder\Form;
+use kartik\datecontrol\DateControl;
+
+
+    <?php $form = ActiveForm::begin(['type'=>ActiveForm::TYPE_HORIZONTAL]); echo Form::widget([
+
+    'model' => $model,
+    'form' => $form,
+    'columns' => 1,
+    'attributes' => [ 
+
+'tanggal_neraca'=>['type'=> Form::INPUT_WIDGET, 'widgetClass'=>DateControl::classname(),'options'=>['type'=>DateControl::FORMAT_DATE]], 
+
+'aktiva_lancar_kas'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Aktiva Lancar Kas...']], 
+
+'aktiva_lancar_bank'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Aktiva Lancar Bank...']], 
+
+'aktiva_lancar_piutang'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Aktiva Lancar Piutang...']], 
+
+'aktiva_lancar_barang'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Aktiva Lancar Barang...']], 
+
+'aktiva_lancar_pekerjaan'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Aktiva Lancar Pekerjaan...']], 
+
+'aktiva_tetap_peralatan'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Aktiva Tetap Peralatan...']], 
+
+'aktiva_tetap_investasi'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Aktiva Tetap Investasi...']], 
+
+'pasiva_hutang_dagang'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Pasiva Hutang Dagang...']], 
+
+'pasiva_hutang_pajak'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Pasiva Hutang Pajak...']], 
+
+'pasiva_hutang_lainnya'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Pasiva Hutang Lainnya...']], 
+
+'hutang_jangka_panjang'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Hutang Jangka Panjang...']], 
+
+'kekayaan_bersih'=>['type'=> Form::INPUT_TEXT, 'options'=>['placeholder'=>'Enter Kekayaan Bersih...']], 
+
+
+    ]
+
+
+    ]);
+
